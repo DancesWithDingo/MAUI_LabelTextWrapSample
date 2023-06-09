@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LabelTextWrapSample.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Toggle" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <VerticalStackLayout>
+            <VerticalStackLayout MinimumHeightRequest="200" BackgroundColor="Yellow">
+                <Label x:Name="TextLabelOne" BackgroundColor="LightYellow"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="300" MinimumHeightRequest="200" BackgroundColor="Green">
+                <Label x:Name="TextLabelTwo" BackgroundColor="PaleGreen"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout MinimumHeightRequest="200" BackgroundColor="DodgerBlue">
+                <Label x:Name="TextLabelThree" WidthRequest="300" BackgroundColor="SkyBlue"/>
+            </VerticalStackLayout>
+
+            <Grid WidthRequest="300" MinimumHeightRequest="200" BackgroundColor="Orange">
+                <Label x:Name="TextLabelFour" BackgroundColor="LightGoldenrodYellow"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
